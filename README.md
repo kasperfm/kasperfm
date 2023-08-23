@@ -1,16 +1,38 @@
-### Hi there 👋
 
-<!--
-**kasperfm/kasperfm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```php
+<?php
 
-Here are some ideas to get you started:
+namespace KasperFM;
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class About extends Me
+{
+    public function getCurrentWorkplace(): array
+    {
+        return [
+            'workplace' => [
+                'company' => 'Modified Solutions',
+                'position' => 'Backend web developer',
+                'location' => 'Denmark'         
+            ]
+        ];
+    }
+
+    public function getDailyKnowledge(): array
+    {
+        return [
+            Php::class,
+            Laravel::class,
+            Vuejs::class,
+            Javascript::class,
+            TailwindCss::class,
+            Linux::class,
+            GameDev::class,
+        ];
+    }
+
+    public function getFutureGoals(): string
+    {
+        return 'To contribute to open source, and learn new things.';
+    }
+}
+```
